@@ -18,15 +18,19 @@
       background-color: #f5f9ff;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
+      align-items: flex-start;
+      min-height: 100vh;
+      overflow-y: auto; /* 스크롤 허용 */
+    }
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
     }
     img {
-      max-width: 100%;
-      height: auto;
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      width: 100%;
+      height: auto; /* 비율 유지 */
+      display: block;
     }
   </style>
 </head>
